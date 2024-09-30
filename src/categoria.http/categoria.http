@@ -1,0 +1,12 @@
+@url = https://8080-joseaugusto-springtempl-6tf9vmkw2zt.ws-us116.gitpod.io
+
+GET {{url}}/categorias
+
+###
+
+POST {{url}}/categorias
+Content-Type: application/json
+
+{
+    "nome": "tESTE"
+}
