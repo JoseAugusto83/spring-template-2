@@ -1,5 +1,6 @@
 package application.model;
 
+import application.record.CategoriaDTO;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -20,6 +21,11 @@ import lombok.Setter;
 @NoArgsConstructor
 @EqualsAndHashCode
 public class Categoria {
+
+    public Categoria(CategoriaDTO dto){
+        this.id = dto.id();
+        this.nome = dto.nome();
+    }
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

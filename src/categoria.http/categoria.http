@@ -1,4 +1,4 @@
-@url = https://8080-joseaugusto-springtempl-6tf9vmkw2zt.ws-us116.gitpod.io
+@url = https://bookish-trout-px6vg67jpjc557-8080.app.github.dev
 
 GET {{url}}/categorias
 
@@ -8,5 +8,12 @@ POST {{url}}/categorias
 Content-Type: application/json
 
 {
-    "nome": "tESTE"
+    "nome": "teste 2"
 }
+
+###
+GET {{url}}/categorias/5
+
+###
+
+DELETE {{url}}/categorias/1
